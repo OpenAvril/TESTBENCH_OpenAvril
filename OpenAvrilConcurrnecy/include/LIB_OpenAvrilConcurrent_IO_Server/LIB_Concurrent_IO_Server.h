@@ -1,0 +1,51 @@
+// The following ifdef block is the standard way of creating macros which make exporting
+// from a DLL simpler. All files within this DLL are compiled with the LIBSERVERIOCONCURRNECY_EXPORTS
+// symbol defined on the command line. This symbol should not be defined on any project
+// that uses this DLL. This way any other project whose source files include this file see
+// LIBSERVERIOCONCURRNECY_API functions as being imported from a DLL, whereas this DLL sees symbols
+// defined with this macro as being exported.
+#ifdef LIBSERVERIOCONCURRNECY_EXPORTS
+#define LIBSERVERIOCONCURRNECY_API __declspec(dllexport)
+#else
+#define LIBSERVERIOCONCURRNECY_API __declspec(dllimport)
+#endif
+
+namespace OpenAvril
+{
+	// This class is exported from the dll
+	class LIBSERVERIOCONCURRNECY_API CLIBServerIOConcurrnecy {
+	public:
+		CLIBServerIOConcurrnecy(void);
+		// TODO: add your methods here.
+		static void* Initialise_Server_Concurrency();
+		static void Initalise_Programs(class OpenAvril::Framework_Server* obj);
+		static void Flip_InBufferToWrite(class OpenAvril::Framework_Server* obj);
+		static void Flip_OutBufferToWrite(class OpenAvril::Framework_Server* obj);
+		static bool Get_flag_IsStackLoaded_Server_InputAction(class OpenAvril::Framework_Server* obj);
+		static bool Get_flag_IsStackLoaded_Server_OutputRecieve(class OpenAvril::Framework_Server* obj);
+		static bool Get_flag_IsInitialised_Avril_FSD_ServerConcurrency(class OpenAvril::Framework_Server* obj);
+		static void* Get_program_WriteEnableStack_ServerInputAction();
+		static void* Get_program_WriteEnableStack_ServerOutputRecieve();
+		static void Pop_Stack_Output(class OpenAvril::Framework_Server* obj);
+		static void Push_Stack_InputPraises(class OpenAvril::Framework_Server* obj);
+		static void Select_Set_Intput_Subset(class OpenAvril::Framework_Server* obj, __int8 praiseEventId);
+		static void Set_flag_IsNewInputDataReady(class OpenAvril::Framework_Server* obj, bool value);
+		static void Set_flag_IsNewOutputDataReady(class OpenAvril::Framework_Server* obj, bool value);
+
+		// Praise Event Id
+		static __int8 Get_PraiseEventId(class OpenAvril::Framework_Server* obj);
+		static void Set_PraiseEventId(class OpenAvril::Framework_Server* obj, __int8 value);
+		// Praise 0 Data
+		static bool Get_Praise0_Input_IsPingActive(class OpenAvril::Framework_Server* obj);
+		static void Set_Praise0_Input_IsPingActive(class OpenAvril::Framework_Server* obj, bool value);
+		static bool Get_Praise0_Output_IsPingActive(class OpenAvril::Framework_Server* obj);
+		static void Set_Praise0_Output_IsPingActive(class OpenAvril::Framework_Server* obj, bool value);
+		// Praise 1 Data
+
+		// Praise 0 Data
+
+		// TODO: add your methods here.
+
+
+	};
+}
