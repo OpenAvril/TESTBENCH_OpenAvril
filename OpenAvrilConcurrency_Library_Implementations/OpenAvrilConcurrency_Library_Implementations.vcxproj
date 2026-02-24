@@ -141,6 +141,7 @@
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Framework.h" />
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Global.h" />
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\pch.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION_Control.h" />

@@ -75,5 +75,8 @@
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\pch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
