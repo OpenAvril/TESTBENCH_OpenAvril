@@ -1,8 +1,8 @@
 #pragma once
 
-namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
+namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE
 {
-    class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global
+    class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global
     {
 // classes.
 
@@ -12,16 +12,16 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 
     public:
 // constructor.
-        WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global();
+        WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global();
 
 // destructor.
-        ~WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global();
+        ~WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global();
 
 // public.
     // dynamic.
-        void initialise_Item_Of_2bit_flag_write_IDLE(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WAIT(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WRITE(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_IDLE(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WAIT(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WRITE(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
         void initialise_number_Of_Implemented_Threads(uint8_t* newValue);
         // get.
         std::list<bool>* get_ptr_2bit_flag_write_IDLE();
