@@ -8,10 +8,4 @@
     <Platforms>AnyCPU;x86</Platforms>
   </PropertyGroup>
 
-  <ItemGroup>
-    <Reference Include="LIBConcurrentIOServer">
-      <HintPath>LIBConcurrentIOServer.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
 </Project>

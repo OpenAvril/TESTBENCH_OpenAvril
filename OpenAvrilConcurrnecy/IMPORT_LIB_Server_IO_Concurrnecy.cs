@@ -2,13 +2,13 @@
 using System.Runtime.InteropServices;
 using System.Security;
 
-namespace OpenAvril
+namespace OpenAvrilConcurrencyCLIB
 {
     [SuppressUnmanagedCodeSecurity]
-    public static class Library_For_Server_Concurrency
+    public static class IO
     {
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?Initialise_Server_Concurrency@CLIBServerIOConcurrnecy@Avril_FSD@@SAPAXXZ")]
-        public static extern IntPtr Initialise_Server_Concurrency();
+        public static extern IntPtr create_Program();
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?Initalise_Programs@CLIBServerIOConcurrnecy@Avril_FSD@@SAXPAVFramework_Server@2@@Z")]
         public static extern void Initialise_Programs(IntPtr obj);
