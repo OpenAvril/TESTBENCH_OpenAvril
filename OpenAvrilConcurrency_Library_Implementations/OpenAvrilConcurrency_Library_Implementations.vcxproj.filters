@@ -23,11 +23,13 @@
     <None Include="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.dll" />
     <None Include="LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.dll" />
     <None Include="LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.dll" />
+    <None Include="LIBWriteEnableForThreadsAtSTACK.dll" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.lib" />
     <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.lib" />
     <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.lib" />
+    <Library Include="lib\LIBWriteEnableForThreadsAtSTACK.lib" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER.h">
@@ -75,7 +77,19 @@
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\pch.h">
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\LIB_WriteEnableForThreadsAt_STACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Framework.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

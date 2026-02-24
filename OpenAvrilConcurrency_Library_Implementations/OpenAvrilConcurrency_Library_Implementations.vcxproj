@@ -126,11 +126,13 @@
     <ClCompile Include="OpenAvrilConcurrency_Library_Implementations.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="LIBWriteEnableForThreadsAtSTACK.dll" />
     <None Include="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.dll" />
     <None Include="LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.dll" />
     <None Include="LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Library Include="lib\LIBWriteEnableForThreadsAtSTACK.lib" />
     <Library Include="lib\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.lib" />
     <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.lib" />
     <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.lib" />
@@ -141,7 +143,6 @@
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Framework.h" />
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Global.h" />
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.h" />
-    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\pch.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION_Control.h" />
@@ -152,6 +153,11 @@
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Control.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework.h" />
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\LIB_WriteEnableForThreadsAt_STACK.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Control.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Framework.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Global.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
