@@ -4,24 +4,24 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
 {
     class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global
     {
-        // classes.
+// classes.
 
-        // registers.
+// registers.
 
-        // pointers.
+// pointers.
 
     public:
-        // constructor.
+// constructor.
         WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global();
 
-        // destructor.
+// destructor.
         ~WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global();
 
-        // public.
-            // dynamic.
-        void initialise_Item_Of_2bit_flag_write_IDLE(uint8_t slot, bool newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WAIT(uint8_t slot, bool newINITIALISED_FlagBit);
-        void initialise_Item_Of_2bit_flag_write_WRITE(uint8_t slot, bool newINITIALISED_FlagBit);
+// public.
+    // dynamic.
+        void initialise_Item_Of_2bit_flag_write_IDLE(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WAIT(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
+        void initialise_Item_Of_2bit_flag_write_WRITE(class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* obj, uint8_t slot, bool newINITIALISED_FlagBit);
         void initialise_number_Of_Implemented_Threads(uint8_t* newValue);
         // get.
         std::list<bool>* get_ptr_2bit_flag_write_IDLE();
@@ -60,3 +60,4 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE
         static void set_number_Of_Implemented_Threads(uint8_t newValue);
     };
 }
+

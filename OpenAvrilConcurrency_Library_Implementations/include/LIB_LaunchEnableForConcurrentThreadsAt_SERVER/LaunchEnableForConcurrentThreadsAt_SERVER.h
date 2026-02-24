@@ -4,11 +4,11 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
 {
     class LaunchEnableForConcurrentThreadsAt_SERVER
     {
-        // classes.
+// classes.
 
 // registers.
 
-// pointers.
+// pointer.
 
     public:
 // constructor.
@@ -19,7 +19,7 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
 
 // public.
     // dynamic.
-        void initialise_Control();
+        void initialise_Control(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         void thread_Start(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrent_CoreId);
         void thread_End(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj, uint8_t concurrent_CoreId);
         // get.
@@ -29,21 +29,21 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER
     // static.
         // get.
         // set.
+
     private:
 // private.
-    // dynaminc.
+    // dynamic.
+        void create_ptr_LaunchConcurrency_Control(class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* obj);
         // get.
         // set.
-        void set_ptr_Global(class LaunchEnableForConcurrentThreadsAt_SERVER_Global* newClass);
-        void set_ptr_LaunchConcurrency_Control(class LaunchEnableForConcurrentThreadsAt_SERVER_Control* newClass);
+        
     // static.
         static void create_ptr_Global();
-        static void create_ptr_LaunchConcurrency_Control();
+        
         // get.
         static class LaunchEnableForConcurrentThreadsAt_SERVER_Global* Get_ptr_Global();
-        static class LaunchEnableForConcurrentThreadsAt_SERVER_Control* Get_ptr_LaunchConcurrency_Control();
         // set.
-        static void Set_ptr_Global(class LaunchEnableForConcurrentThreadsAt_SERVER_Global* newClass);
-        static void Set_ptr_LaunchConcurrency_Control(class LaunchEnableForConcurrentThreadsAt_SERVER_Control* newClass);
+        static void set_ptr_Global(class LaunchEnableForConcurrentThreadsAt_SERVER_Global* newClass);
+        static void set_ptr_LaunchConcurrency_Control(class LaunchEnableForConcurrentThreadsAt_SERVER_Control* newClass);
     };
 }
