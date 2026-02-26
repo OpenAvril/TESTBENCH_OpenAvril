@@ -23,15 +23,11 @@
     <None Include="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.dll" />
     <None Include="LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.dll" />
     <None Include="LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.dll" />
-    <None Include="LIBWriteEnableForThreadsAtSTACK.dll" />
-    <None Include="LIBLaunchEnableForConcurrentThreadsAtEND.dll" />
   </ItemGroup>
   <ItemGroup>
     <Library Include="lib\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.lib" />
     <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.lib" />
     <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.lib" />
-    <Library Include="lib\LIBWriteEnableForThreadsAtSTACK.lib" />
-    <Library Include="lib\LIBLaunchEnableForConcurrentThreadsAtEND.lib" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER.h">
@@ -76,34 +72,7 @@
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\LIB_WriteEnableForThreadsAt_STACK.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Control.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Global.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END_Control.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END_Framework.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END_Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LIB_LaunchEnableForConcurrentThreadsAt_END.h">
