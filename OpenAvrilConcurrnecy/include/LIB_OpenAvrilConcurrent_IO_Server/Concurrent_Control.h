@@ -1,18 +1,36 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
     class Concurrent_Control
     {
-    public:
-        Concurrent_Control();
-        virtual ~Concurrent_Control();
+	public:
+// pointers.
+	// classes.
+	// registers.
 
-        void SelectSet_Algorithm_Subset(class OpenAvril::Framework_Server* obj, __int8 ptr_praiseEventId, __int8 concurrent_coreId);
+// constructor.
+		Concurrent_Control();
 
-    protected:
+// destructor.
+		virtual ~Concurrent_Control();
 
-    private:
+// public.
+	// dynamic.
+		// get.
+		void selectset_Algorithm_Subset(class Framework_Server* obj, uint8_t ptr_praiseEventId, uint8_t concurrent_threadID);
+		// set.
+	// static.
+		// get.
+		// set.
 
+	private:
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
     };
 }

@@ -1,31 +1,70 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
     class Data_Control
     {
     public:
+// constructor.
         Data_Control();
+
+// destructor.
         virtual ~Data_Control();
-        void Pop_Stack_InputPraises(class OpenAvril::Framework_Server* obj, __int8 concurrentCoreId);
-        void Pop_Stack_Output(class OpenAvril::Framework_Server* obj);
-        void Push_Stack_InputPraises(class OpenAvril::Framework_Server* obj);
-        void Push_Stack_Output(class OpenAvril::Framework_Server* obj, __int8 concurrentCoreId);
-        void Store_Praise_In_Data_To_GameInstance_Data(class OpenAvril::Framework_Server* obj, std::vector<class OpenAvril::Input*>* stack);
-        void Store_Praise_Out_Data_To_GameInstance_Data(class OpenAvril::Framework_Server* obj, std::vector<class OpenAvril::Output*>* stack);
 
-        bool Get_flag_IsStackLoaded_Server_InputAction();
-        bool Get_flag_IsStackLoaded_Server_OutputRecieve();
-        bool Get_flag_IsNewInputDataReady();
-        bool Get_flag_IsNewOutputDataReady();
-
-        void Set_flag_IsNewInputDataReady(bool value);
-        void Set_flag_IsNewOutputDataReady(bool value);
-
-    protected:
+// public.
+    // dynamic.
+        uint8_t boolToInt(bool bufferSide);
+        void flip_Input_DoubleBuffer();
+        void flip_Output_DoubleBuffer();
+        void initialise_ptr_flag_isLoaded_Stack_InputAction(bool* newINITIALISED_Bool);
+        void initialise_ptr_flag_isLoaded_Stack_OutputSend(bool* newINITIALISED_Bool);
+        void initialise_ptr_side_To_Write_For_array_Of_doubleBuffer_Input(uint8_t side, bool* newINITIALISED_Bool);
+        void initialise_ptr_side_To_Write_For_array_Of_doubleBuffer_Output(uint8_t side, bool* newINITIALISED_Bool);
+        void pop_From_Stack_Of_Input(class OpenAvrilConcurrency::Data* obj, uint8_t concurrentThreadID);
+        void pop_From_Stack_Of_Output(class OpenAvrilConcurrency::Data* obj);
+        void push_To_Stack_Of_Input(class OpenAvrilConcurrency::Data* obj);
+        void push_To_Stack_Of_Output(class OpenAvrilConcurrency::Data* obj, uint8_t concurrentThreadID);
+        // get.
+        bool get_ptr_flag_isLoaded_Stack_InputAction();
+        bool get_ptr_flag_isLoaded_Stack_OutputSend();
+        uint8_t get_STATE_Of_READ_For_array_Of_doubleBuffer_Input();
+        uint8_t get_STATE_Of_READ_For_array_Of_doubleBuffer_Output();
+        uint8_t get_STATE_Of_WRITE_For_array_Of_doubleBuffer_Input();
+        uint8_t get_STATE_Of_WRITE_For_array_Of_doubleBuffer_Output();
+        // set.
+        void set_ptr_flag_isLoaded_Stack_InputAction(bool value);
+        void set_ptr_flag_isLoaded_Stack_OutputSend(bool value);
+    // static.
+        // get.
+        // set.
 
     private:
-        void Set_flag_IsStackLoaded_Server_InputAction(bool value);
-        void Set_flag_IsStackLoaded_Server_OutputRecieve(bool value);
+// private.
+    // dynamic.
+    
+        // get.
+        // set.
+    // static.
+        static void stat_create_ptr_flag_isLoaded_Stack_InputAction(bool* newINITIALISED_Bool);
+        static void stat_create_ptr_flag_isLoaded_Stack_OutputSend(bool* newINITIALISED_Bool);
+        static void stat_create_ptr_side_To_Write_For_array_Of_doubleBuffer_Input(bool* newINITIALISED_Bool);
+        static void stat_create_ptr_side_To_Write_For_array_Of_doubleBuffer_Output(bool* newINITIALISED_Bool);
+        // get.
+        static bool* stat_get_ptr_flag_isLoaded_Stack_InputAction();
+        static bool* stat_get_ptr_flag_isLoaded_Stack_OutputSend();
+        static bool* stat_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Input();
+        static bool* stat_get_ptr_side_To_Write_For_array_Of_doubleBuffer_Output();
+        // set.
+        static void stat_set_ptr_flag_isLoaded_Stack_InputAction(bool* newPtr);
+        static void stat_set_ptr_flag_isLoaded_Stack_OutputSend(bool* newPtr);
+        static void stat_set_ptr_side_To_Write_For_array_Of_doubleBuffer_Input(bool newvalue);
+        static void stat_set_ptr_side_To_Write_For_array_Of_doubleBuffer_Output(bool newvalue);
+    // pointers.
+        // classes.
+        // registers.
+        static bool* _ptr_flag_isLoaded_Stack_InputAction;
+        static bool* _ptr_flag_isLoaded_Stack_OutputSend;
+        static bool* _ptr_side_To_Write_For_array_Of_doubleBuffer_Input;
+        static bool* _ptr_side_To_Write_For_array_Of_doubleBuffer_Output;
     };
 }

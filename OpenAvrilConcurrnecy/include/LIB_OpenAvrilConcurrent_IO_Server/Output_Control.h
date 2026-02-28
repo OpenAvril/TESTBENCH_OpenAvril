@@ -1,18 +1,32 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
     class Output_Control
     {
-    public:
-        Output_Control();
-        virtual ~Output_Control();
+	public:
+// constructor.
+		Output_Control();
 
-        void SelectSet_Output_Subset(class Framework_Server* obj, __int8 ptr_praiseEventId, __int8 concurrent_coreId);
+// destructor.
+		virtual ~Output_Control();
 
-    protected:
+// public.
+	// dynamic.
+		// get.
+		// set.
+		void selectset_Output_Subset(class Framework_Server* obj, uint8_t ptr_praiseEventId, uint8_t concurrent_threadID);
+	// static.
+		// get.
+		// set.
 
-    private:
-
+	private:
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
     };
 }

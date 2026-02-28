@@ -1,21 +1,54 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
     class Execute
     {
     public:
+// constructor.
         Execute();
+
+// destructor.
         virtual ~Execute();
-        void Initialise_Control(__int8 number_Implemented_Cores);
-        void Initialise_Libraries();
-        void Initialise_Threads(class OpenAvril::Framework_Server* obj);
-        class Execute_Control* Get_Control_Of_Execute();
-        class LaunchEnableForConcurrentThreadsAt_SERVER_Framework* Get_Program_ConcurrentQue_Server();
-        class WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* Get_Program_WriteEnable_ServerInputAction();
-        class WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* Get_Program_WriteEnable_ServerOutputRecieve();
+
+// public.
+    // dynamic.
+        void initialise_Control(uint8_t number_Implemented_Cores);
+        void initialise_Libraries();
+        void initialise_Threads(class Framework_Server* obj);
+        void initialise_ptr_array_Of_ptr_list_Of_Threads(class Framework_Server* obj, uint8_t threadId);
+        // get.
+        class Execute_Control* get_ptr_Execute_Control();
+        class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* get_program_ConcurrentQue_Server();
+        class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* get_program_WriteEnable_ServerInputAction();
+        class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* get_program_WriteEnable_ServerOutputRecieve();
+        // set.
+    // static.
+        // get.
+        // set.
 
     private:
-        static void Set_Control_Of_Execute(class OpenAvril::Execute_Control* execute_Control);
+// private.
+    // dynamic.
+        // get.
+        // set.
+    // static.
+        static void stat_create_ptr_Execute_Control(uint8_t number_Implemented_Cores);
+        static void stat_create_ptr_array_Of_ptr_list_Of_Threads();
+        // get.
+        static class Execute_Control* stat_get_ptr_Execute_Control();
+        static std::thread* stat_get_Item_On_array_Of_ptr_list_Of_Threads(uint8_t threadId);
+        static std::list<std::thread*>* stat_get_ptr_array_Of_ptr_list_Of_Threads();
+        static class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* stat_get_program_ConcurrentQue_Server();
+        static class OpenAvrilCLIDWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* stat_get_program_WriteEnable_ServerInputAction();
+        static class OpenAvrilCLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* stat_get_program_WriteEnable_ServerOutputRecieve();
+        // set.
+        static void stat_set_ptr_Execute_Control(class Execute_Control* newClass);
+        static void stat_set_Item_On_array_Of_ptr_list_Of_Threads(OpenAvrilConcurrency::Framework_Server* obj, uint8_t threadID);
+    // pointers.
+        // programs.
+        // classes.
+        // registers.
+        static std::list<std::thread*>* _ptr_array_Of_ptr_list_Of_Threads;
     };
 }

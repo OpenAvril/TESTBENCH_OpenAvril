@@ -1,21 +1,38 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
 	class User_O
 	{
 	public:
+// constructor.
 		User_O();
-		virtual ~User_O();
-		class Praise0_Output* Get_Praise0_Output();
-		class Praise1_Output* Get_Praise1_Output();
-		class Praise2_Output* Get_Praise2_Output();
 
-	protected:
+// destructor.
+		virtual ~User_O();
+
+// public.
+	// dynamic.
+		// get.
+		class Praise0_Output* get_ptr_Praise0_Output();
+		// set.
+	// static.
+		// get.
+		// set.
 
 	private:
-		static void Set_Praise0_Output(class Praise0_Output* praise0_O);
-		static void Set_Praise1_Output(class Praise1_Output* praise1_O);
-		static void Set_Praise2_Output(class Praise2_Output* praise2_O);
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		static void stat_create_ptr_Praise0_Output();
+		// get.
+		static class Praise0_Output* stat_get_ptr_Praise0_Output();
+		// set.
+		static void stat_set_Praise0_ptr_Output(class Praise0_Output* praise0_O);
+	// pointers.
+		// classes.	
+		// registers.
 	};
 }

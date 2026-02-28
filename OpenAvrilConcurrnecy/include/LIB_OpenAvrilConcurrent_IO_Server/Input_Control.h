@@ -1,18 +1,32 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
     class Input_Control
     {
-    public:
-        Input_Control();
-        virtual ~Input_Control();
-        
-        void SelectSet_Input_Subset(class Framework_Server* obj, __int8 ptr_praiseEventId);
+	public:
+// constructor.
+		Input_Control();
 
-    protected:
+// destructor.
+		virtual ~Input_Control();
 
-    private:
+// public.
+	// dynamic.
+		void select_And_Set_Input_Subset(class Framework_Server* obj, uint8_t ptr_praiseEventId);
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
 
+	private:
+// private.
+	// dynamic.
+		// get.
+		// set.
+	// static.
+		// get.
+		// set.
     };
 }

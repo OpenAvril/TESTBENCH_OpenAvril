@@ -1,16 +1,40 @@
 #pragma once
 
-namespace OpenAvril
+namespace OpenAvrilConcurrency
 {
     class Framework_Server
     {
     public:
+// constructor.
         Framework_Server();
+
+// destructor.
         virtual ~Framework_Server();
-        void Initialise_Program(OpenAvril::Framework_Server* obj);
-        class Server* Get_Server_Assembly();
+
+// public.
+    // dynamic.
+        void initialise_Program(class Framework_Server* obj);
+        // get.
+        class Server* get_ptr_Server();
+        // set.
+    // static.
+        // get.
+        // set.
 
     private:
-        static void Set_Server_Assembly(class Server* server);
+// private.
+    // dynamic.
+        // get.
+        // set.
+    // static.
+        static void stat_create_ptr_Server();
+        // get.
+        static class Server* stat_get_ptr_Server();
+        // set.
+        static void stat_set_ptr_Server(class Server* server);
+    // pointers.
+        // classes.
+        // registers.
+
     };
 }
