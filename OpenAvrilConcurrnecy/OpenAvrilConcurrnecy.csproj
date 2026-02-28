@@ -12,4 +12,10 @@
     <Folder Include="lib\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LIBConcurrentIOServer">
+      <HintPath>LIBConcurrentIOServer.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

@@ -8,7 +8,7 @@ namespace OpenAvrilConcurrencyCLIB
     public static class IO
     {
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?generate_Program@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAPAXXZ")]
-        public static extern IntPtr create_Program();
+        public static extern IntPtr generate_Program();
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?initalise_Program@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
         public static extern void initialise_Programs(IntPtr obj);
@@ -37,7 +37,7 @@ namespace OpenAvrilConcurrencyCLIB
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?push_To_Stack_Of_Input@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
         public static extern void push_Stack_InputPraises(IntPtr obj);
 
-        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?push_To_Stack_Of_Input@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
+        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?select_set_Intput_Subset@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@E@Z")]
         public static extern void select_Set_Intput_Subset(IntPtr obj, byte praiseEventId);
 
         // Praise Event Id
