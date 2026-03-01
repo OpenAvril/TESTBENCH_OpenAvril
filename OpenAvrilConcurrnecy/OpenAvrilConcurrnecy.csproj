@@ -18,4 +18,19 @@
     </Reference>
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="LIBConcurrentIOServer.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
