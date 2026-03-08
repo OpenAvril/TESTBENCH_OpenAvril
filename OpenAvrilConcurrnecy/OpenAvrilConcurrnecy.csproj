@@ -13,12 +13,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="LIBConcurrentIOServer">
-      <HintPath>LIBConcurrentIOServer.dll</HintPath>
-    </Reference>
-  </ItemGroup>
-
-  <ItemGroup>
     <None Update="LIBConcurrentIOServer.dll">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>

@@ -4,12 +4,6 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE
 {
     class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE
     {
-// classes.
-
-// registers.
-
-// pointers.
-
     public:
 // constructor.
         WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE();
@@ -36,13 +30,18 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE
         // get.
         // set.
     // static.
-        static void create_ptr_Global();
-        static void create_ptr_WriteEnable_Control();
+        static void stat_create_ptr_Global();
+        static void stat_create_ptr_WriteEnable_Control();
         // get.
-        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global* Get_ptr_Global();
-        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Control* Get_ptr_WriteEnable_Control();
+        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global* stat_get_ptr_Global();
+        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Control* stat_get_ptr_WriteEnable_Control();
         // set.
-        static void set_ptr_Global(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global* global);
-        static void set_ptr_WriteEnable_Control(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Control* writeEnableControl);
+        static void stat_set_ptr_Global(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global* global);
+        static void stat_set_ptr_WriteEnable_Control(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Control* writeEnableControl);
+    // pointers.
+        // classes.
+        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global* _ptr_Global;
+        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Control* _ptr_WriteEnable_Control;
+        // registers.
     };
 }

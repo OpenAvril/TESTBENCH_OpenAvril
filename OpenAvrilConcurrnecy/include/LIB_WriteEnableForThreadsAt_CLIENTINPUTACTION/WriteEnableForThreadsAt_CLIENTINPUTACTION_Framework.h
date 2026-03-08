@@ -4,12 +4,6 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION
 {
     class WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework
     {
-// classes.
-
-// registers.
-
-// pointers.
-
     public:
 // constructor.
         WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework();
@@ -33,10 +27,14 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION
         // get.
         // set.
     // static.
-        static void create_ptr_WriteEnable();
+        static void stat_create_WriteEnable();
         // get.
-        static class WriteEnableForThreadsAt_CLIENTINPUTACTION* Get_ptr_WriteEnable();
+        static class WriteEnableForThreadsAt_CLIENTINPUTACTION* stat_get_ptr_WriteEnable();
         // set.
-        static void set_ptr_WriteEnable(class WriteEnableForThreadsAt_CLIENTINPUTACTION* writeEnable);
+        static void stat_set_ptr_WriteEnable(class WriteEnableForThreadsAt_CLIENTINPUTACTION* writeEnable);
+    // pointers.
+        // classes.
+        static OpenAvrilCLIDWriteEnableForThreadsAtCLIENTINPUTACTION::WriteEnableForThreadsAt_CLIENTINPUTACTION* _ptr_WriteEnable;
+        // registers.
     };
 }

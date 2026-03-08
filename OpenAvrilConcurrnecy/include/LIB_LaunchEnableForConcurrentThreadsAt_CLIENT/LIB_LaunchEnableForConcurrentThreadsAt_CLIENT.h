@@ -6,45 +6,46 @@
 
 namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
 {
-	class LAUNCHENABLEFORCONCURRENTTHREADSATCLIENT_API CLIBLaunchEnableForConcurrentThreadsAtCLIENT {
-// classes.
-
-// registers.
-
-// pointer.
-
+	class LAUNCHENABLEFORCONCURRENTTHREADSATCLIENT_API CLIBLaunchEnableForConcurrentThreadsAtCLIENT
+	{
 	public:
-// constructor.
+		// constructor.
 		CLIBLaunchEnableForConcurrentThreadsAtCLIENT();
 
-// destructor.
+		// destructor.
 
-// public.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-		static void* create_Program();
-		static void request_Wait_launch(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrent_CoreId);
-		static void thread_End(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework*, uint8_t concurrent_CoreId);
+		// public.
+			// dynamic.
+				// get.
+				// set.
+			// static.
+		static void* generate_Program();//ToDO: uncomment for C#.
+		//static class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* generate_Program();//ToDO: uncomment for C++.
+		static void request_Wait_launch(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrentThreadID);
+		static void thread_End(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework*, uint8_t concurrentThreadID);
 		// get.
 		static uint8_t get_coreId_To_launch(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj);
 		static bool get_Flag_Active(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj);
-		static bool get_Flag_ConcurrentCoreState(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrent_CoreId);
+		static bool get_Flag_ConcurrentCoreState(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrentThreadID);
 		static bool get_Flag_Idle(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj);
 		static bool get_State_launchBit(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj);
-		static void set_state_ConcurrentCore(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrent_CoreId, bool value);
 		// set.
+		static void set_Flag_ConcurrentCoreState(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* obj, uint8_t concurrentThreadID, bool value);
 
 	private:
-// private.
-	// dynamic.
+		// private.
+			// dynamic.
+				// get.
+				// set.
+			// static.
+		static void stat_create_ptr_Framework();
 		// get.
+		static class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* stat_get_ptr_Framework();
 		// set.
-	// static.
-		// get.
-		static class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* get_ptr_Framework();
-		// set.
-		static void set_ptr_Framework(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* framework);
+		static void stat_set_ptr_Framework(class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework* newClass);
+		// pointers.
+			// classes.
+
+			// registers.
 	};
 }

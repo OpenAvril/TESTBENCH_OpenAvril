@@ -4,12 +4,6 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE
 {
     class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework
     {
-// classes.
-
-// registers.
-
-// pointers.
-
     public:
 // constructor.
         WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework();
@@ -33,10 +27,14 @@ namespace OpenAvrilCLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE
         // get.
         // set.
     // static.
-        static void create_ptr_WriteEnable();
+        static void stat_create_WriteEnable();
         // get.
-        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE* Get_ptr_WriteEnable();
+        static class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE* stat_get_ptr_WriteEnable();
         // set.
-        static void set_ptr_WriteEnable(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE* writeEnable);
+        static void stat_set_ptr_WriteEnable(class WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE* writeEnable);
+    // pointers.
+        // classes.
+        static OpenAvrilCLIDWriteEnableForThreadsAtCLIENTOUTPUTRECIEVE::WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE* _ptr_WriteEnable;
+        // registers.
     };
 }

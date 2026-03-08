@@ -4,12 +4,6 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
 {
     class LaunchEnableForConcurrentThreadsAt_CLIENT_Framework
     {
-// classes.
-
-// registers.
-
-// pointers.
-
     public:
 // constructor.
         LaunchEnableForConcurrentThreadsAt_CLIENT_Framework();
@@ -32,13 +26,15 @@ namespace OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtCLIENT
     // dynaminc.
         // get.
         // set.
-        void set_ptr_LaunchConcurrency(class LaunchEnableForConcurrentThreadsAt_CLIENT* concurrentQue);
-
     // static.
-        static void create_ptr_LaunchConcurrency();
+        static void stat_create_ptr_LaunchConcurrency();
         // get.
-        static class LaunchEnableForConcurrentThreadsAt_CLIENT* Get_ptr_LaunchConcurrency();
+        static class LaunchEnableForConcurrentThreadsAt_CLIENT* stat_get_ptr_LaunchConcurrency();
         // set.
-        static void Set_ptr_LaunchConcurrency(class LaunchEnableForConcurrentThreadsAt_CLIENT* concurrentQue);
+        static void stat_set_ptr_LaunchConcurrency(class LaunchEnableForConcurrentThreadsAt_CLIENT* concurrentQue);
+    // pointers.
+        // classes.
+        static class LaunchEnableForConcurrentThreadsAt_CLIENT* _ptr_LaunchConcurrency;
+        // registers.
     };
 }
