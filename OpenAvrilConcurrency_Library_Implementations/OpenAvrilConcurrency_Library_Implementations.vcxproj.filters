@@ -75,5 +75,68 @@
     <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Algorithms.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Concurrent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Concurrent_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Data.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Data_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Execute.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Execute_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Framework_Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Input_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\LIB_Concurrent_IO_Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Output_Control.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Praise0_Algorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Praise0_Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Praise0_Output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\User_Alogorithm.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\User_Input.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\User_Output.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
