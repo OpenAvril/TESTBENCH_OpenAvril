@@ -7,7 +7,7 @@ namespace OpenAvrilConcurrencyCLIB
     [SuppressUnmanagedCodeSecurity]
     public static class IO
     {
-        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "")]
+        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?generate_Program@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAPAXXZ")]
         public static extern IntPtr generate_Program();
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?initalise_Program@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
@@ -23,15 +23,15 @@ namespace OpenAvrilConcurrencyCLIB
         public static extern bool get_flag_IsStackLoaded_Server_OutputSend(IntPtr obj);
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?get_flag_IsInitialised_OpenAvrilConcurrencyConcurrency@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SA_NPAVFramework_Server@2@@Z")]
-        public static extern bool get_flag_IsInitialised_OpenAvrilConcurrencyConcurrency(IntPtr obj);
+        public static extern bool get_flag_IsInitialised_OpenAvrilConcurrency(IntPtr obj);
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?get_program_WriteEnableStack_ServerInputAction@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAPAXPAVFramework_Server@2@@Z")]
         public static extern IntPtr get_program_WriteEnableStack_ServerInputAction();
 
-        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?get_program_WriteEnableStack_ServerOutputRecieve@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAPAXPAVFramework_Server@2@@Z")]
+        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?get_program_WriteEnableStack_ServerInputAction@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAPAXPAVFramework_Server@2@@Z")]
         public static extern IntPtr get_program_WriteEnableStack_ServerOutputRecieve();
 
-        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?pop_From_Stack_Of_Output@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
+        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?push_To_Stack_Of_Input@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
         public static extern void pop_Stack_Output(IntPtr obj);
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?push_To_Stack_Of_Input@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
