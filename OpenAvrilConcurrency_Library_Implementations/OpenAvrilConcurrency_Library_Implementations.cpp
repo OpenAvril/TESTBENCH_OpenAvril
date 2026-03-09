@@ -2,9 +2,8 @@
 #include <array>
 #include <cstdint>
 #include <cstddef>
-#include <iostream>
-#include <vector>
 #include <list>
+#include <vector>
 //#include "include\LIB_WriteEnableForThreadsAt_STACK\LIB_WriteEnableForThreadsAt_STACK.h"
 //#include "include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Framework.h"
 //#include "include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK.h"
@@ -46,15 +45,12 @@
 
 
         class OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::LaunchEnableForConcurrentThreadsAt_SERVER_Framework* pgmID_0 = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::CLIBLaunchEnableForConcurrentThreadsAtSERVER::generate_Program();
-        while (pgmID_0 == NULL) {}
         std::cout << "booted pgmID_0 => CLIBLaunchEnableForConcurrentThreadsAtSERVER." << std::endl;
 
         class OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTACTION::WriteEnableForThreadsAt_SERVERINPUTACTION_Framework* pgmID_1 = OpenAvrilCLIBWriteEnableForThreadsAtSERVERINPUTACTION::CLIBWriteEnableForThreadsAtSERVERINPUTACTION::generate_Program();
-        while (pgmID_1 == NULL) {}
         std::cout << "booted pgmID_1 => CLIDWriteEnableForThreadsAtSERVERINPUTACTION." << std::endl;;
 
         class OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework* pgmID_2 = OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program();
-        while (pgmID_2 == NULL) {}
         std::cout << "booted pgmID_2 => CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE." << std::endl;;
 
     }

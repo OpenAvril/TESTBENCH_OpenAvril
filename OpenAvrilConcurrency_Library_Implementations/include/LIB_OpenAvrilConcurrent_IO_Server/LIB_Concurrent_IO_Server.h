@@ -3,7 +3,7 @@
 #else
 #define LIBSERVERIOCONCURRNECY_API __declspec(dllimport)
 #endif
-
+#include <cstdint>
 namespace OpenAvrilConcurrency
 {
 	class LIBSERVERIOCONCURRNECY_API CLIBConcurrentServerIO 

@@ -7,7 +7,7 @@ namespace OpenAvrilConcurrencyCLIB
     [SuppressUnmanagedCodeSecurity]
     public static class IO
     {
-        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?generate_Program@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAPAXXZ")]
+        [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "")]
         public static extern IntPtr generate_Program();
 
         [DllImport("LIBConcurrentIOServer.dll", EntryPoint = "?initalise_Program@CLIBConcurrentServerIO@OpenAvrilConcurrency@@SAXPAVFramework_Server@2@@Z")]
