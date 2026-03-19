@@ -95,6 +95,6 @@ int main()
     //void* pgmID_2 = OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program();
     //std::cout << "booted pgmID_2 => CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE.\n" << std::endl;;
 
-    void* pgmID = OpenAvrilConcurrency::CLIBConcurrentServerIO::app_generate_Program();
+    void* pgmID = OpenAvrilConcurrency::CLIBConcurrentServerIO::app_FUNCT_generate_Program();
 
 }

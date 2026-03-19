@@ -19,7 +19,7 @@ namespace OpenAvrilConcurrency
         static class Framework_Server* stat_CONVERT_ObjPtr_to_Class(void* obj);
     private:
         static uint8_t* _stat_REG_ptr_number_Of_Implemented_Cores;
-        static uint8_t* _stat_REG_ptr_number_Of_Praise_Events;
+        static uint8_t* _stat_REG__ptr_number_Of_Praise_Events;
         static void stat_REG_create_number_Of_Implemented_Cores(uint8_t* newDEFAULT_Value);
         static void stat_REG_create_number_Of_Praise_Events(uint8_t* newDEFAULT_Value);
         static uint8_t* stat_REG_get_Ptr_number_Of_Implemented_Cores();
