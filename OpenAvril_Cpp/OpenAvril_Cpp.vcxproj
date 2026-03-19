@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{bb6b33f8-0324-429c-ac8d-6ae3222c0db2}</ProjectGuid>
+    <RootNamespace>OpenAvrilCpp</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\Users\drago\source\repos\TestBench\OpenAvril_Cpp\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Assignment_1_-_the_dll.lib;LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.lib;LIB_LaunchEnableForConcurrentThreadsAt_SERVER.lib;LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION.lib;LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.lib;LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.lib;LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.lib;LIBConcurrentIOServer.lib;LIBLaunchEnableForConcurrentThreadsAtEND.lib;LIBWriteEnableForThreadsAtSTACK.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="OpenAvril_Cpp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\Assignment_1_-_the_dll.lib" />
+    <Library Include="lib\LIBLaunchEnableForConcurrentThreadsAtEND.lib" />
+    <Library Include="lib\LIBWriteEnableForThreadsAtSTACK.lib" />
+    <Library Include="lib\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.lib" />
+    <Library Include="lib\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.lib" />
+    <Library Include="lib\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION.lib" />
+    <Library Include="lib\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.lib" />
+    <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.lib" />
+    <Library Include="lib\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assignment_1_-_the_dll.dll" />
+    <None Include="LIBLaunchEnableForConcurrentThreadsAtEND.dll" />
+    <None Include="LIBWriteEnableForThreadsAtSTACK.dll" />
+    <None Include="LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.dll" />
+    <None Include="LIB_LaunchEnableForConcurrentThreadsAt_SERVER.dll" />
+    <None Include="LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION.dll" />
+    <None Include="LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.dll" />
+    <None Include="LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.dll" />
+    <None Include="LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT\LaunchEnableForConcurrentThreadsAt_CLIENT.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT\LaunchEnableForConcurrentThreadsAt_CLIENT_Control.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT\LaunchEnableForConcurrentThreadsAt_CLIENT_Framework.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT\LaunchEnableForConcurrentThreadsAt_CLIENT_Global.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT\LIB_LaunchEnableForConcurrentThreadsAt_CLIENT.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END_Control.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END_Framework.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LaunchEnableForConcurrentThreadsAt_END_Global.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_END\LIB_LaunchEnableForConcurrentThreadsAt_END.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Control.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Framework.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LaunchEnableForConcurrentThreadsAt_SERVER_Global.h" />
+    <ClInclude Include="include\LIB_LaunchEnableForConcurrentThreadsAt_SERVER\LIB_LaunchEnableForConcurrentThreadsAt_SERVER.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Algorithms.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Concurrent.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Concurrent_Control.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Data.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Data_Control.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Execute.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Execute_Control.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Framework_Server.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Global.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Input.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Input_Control.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\LIB_Concurrent_IO_Server.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Output.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Output_Control.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Praise0_Algorithm.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Praise0_Input.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Praise0_Output.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\Server.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\User_Alogorithm.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\User_Input.h" />
+    <ClInclude Include="include\LIB_OpenAvrilConcurrent_IO_Server\User_Output.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION\WriteEnableForThreadsAt_CLIENTINPUTACTION.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION\WriteEnableForThreadsAt_CLIENTINPUTACTION_Control.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION\WriteEnableForThreadsAt_CLIENTINPUTACTION_Framework.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTINPUTACTION\WriteEnableForThreadsAt_CLIENTINPUTACTION_Global.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE\WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE\WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Control.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE\WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Framework.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE\WriteEnableForThreadsAt_CLIENTOUTPUTRECIEVE_Global.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION_Control.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION_Framework.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVERINPUTACTION\WriteEnableForThreadsAt_SERVERINPUTACTION_Global.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Control.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Framework.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE\WriteEnableForThreadsAt_SERVEROUTPUTRECIEVE_Global.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\LIB_WriteEnableForThreadsAt_STACK.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Control.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Framework.h" />
+    <ClInclude Include="include\LIB_WriteEnableForThreadsAt_STACK\WriteEnableForThreadsAt_STACK_Global.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
