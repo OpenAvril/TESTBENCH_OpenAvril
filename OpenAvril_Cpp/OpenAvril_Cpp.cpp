@@ -68,24 +68,23 @@ int main()
 {
     std::cout << "entered TestBench." << std::endl;
 // LIB Adder.
-    void* pgmID_CLIBMAth = CLIBMyMath::CLIBAdder::app_FUNCT_generate_Program();
+    //void* pgmID_CLIBMAth = CLIBMyMath::CLIBAdder::app_FUNCT_generate_Program();
     //std::cout << "booted CLIBAdder." << std::endl;
     //CLIBMyMath::CLIBAdder::set_Input_Subset_praise0_valueA(pgmID_CLIBMAth, (unsigned char*)uint8_t(1.2));
     //CLIBMyMath::CLIBAdder::set_Input_Subset_praise0_valueB(pgmID_CLIBMAth, (unsigned char*)uint8_t(1.2));
     //std::cout << "set inputs. A=" << uint8_t(1.2) << " B=" << uint8_t(1.2) << std::endl;
     //CLIBMyMath::CLIBAdder::do_Add(pgmID_CLIBMAth);
-   // std::cout << "done add." << std::endl;
-   // std::cout << "ans = " << CLIBMyMath::Global::stat_ByteArray_to_Double(CLIBMyMath::CLIBAdder::get_Output_Subset_praise0_value(pgmID_CLIBMAth)) << std::endl;
-
+    //std::cout << "done add." << std::endl;
+    //std::cout << "ans = " << CLIBMyMath::Global::stat_ByteArray_to_Double(CLIBMyMath::CLIBAdder::get_Output_Subset_praise0_value(pgmID_CLIBMAth)) << std::endl;
 
 // LIB Templates.
-    /*
-    void* pgmID_ReadWrite = OpenAvrilCLIDWriteEnableForThreadsAtSTACK::CLIDWriteEnableForThreadsAtSTACK::generate_Program();
+    
+    void* pgmID_ReadWrite = OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_generate_Program();
     std::cout << "booted pgmID_ReadWrite => CLIDWriteEnableForThreadsAtSTACK.\n";
 
-    void* pgmID_LaunchThraed = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::generate_Program();
-    std::cout << "booted pgmID_LaunchThraed => CLIBLaunchEnableForConcurrentThreadsAtEND.\n";
-    */
+    //void* pgmID_LaunchThraed = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::generate_Program();
+    //std::cout << "booted pgmID_LaunchThraed => CLIBLaunchEnableForConcurrentThreadsAtEND.\n";
+    
 
 // LIB_Server
     //void* pgmID_0 = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtSERVER::CLIBLaunchEnableForConcurrentThreadsAtSERVER::generate_Program();
