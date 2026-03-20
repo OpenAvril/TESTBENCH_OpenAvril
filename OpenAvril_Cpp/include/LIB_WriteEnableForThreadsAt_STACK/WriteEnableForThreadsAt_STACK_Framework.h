@@ -1,50 +1,25 @@
 #pragma once
-
-namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
+namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
 {
     class WriteEnableForThreadsAt_STACK_Framework
     {
     public:
-// public.
-    // constructor.
         WriteEnableForThreadsAt_STACK_Framework();
-
-    // destructor.
         virtual ~WriteEnableForThreadsAt_STACK_Framework();
-
-    // dynamic.
-        void dyn_initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
-        // get.
+        static void app0_CLASS_DECLAIRE_WriteEnableForThreadsAt_STACK_Framework();
+        static void app1_CLASS_DEFINE_WriteEnableForThreadsAt_STACK_Framework();
+        static void app3_CLASS_INITIALISE_WriteEnableForThreadsAt_STACK_Framework();
+        static void app0_REG_DECLAIRE_WriteEnableForThreadsAt_STACK_Framework();
+        void app1_REG_DEFINE_WriteEnableForThreadsAt_STACK_Framework(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app2_REG_SUBSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app3_REG_INITIALISE_WriteEnableForThreadsAt_STACK_Framework(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app4_PGM_INSTANTIATE_WriteEnableForThreadsAt_STACK_Framework(class WriteEnableForThreadsAt_STACK_Framework* obj);
+        void app_initialise(class WriteEnableForThreadsAt_STACK_Framework* obj);
         class WriteEnableForThreadsAt_STACK* dyn_CLASS_get_ptr_WriteEnable();
-        // set.
-    // static.
-        // get.
-        // set.
-
     private:
-// private.
-    // dynamic.
-
-        // classes.
-            // create.
-            // get.
-
-            // set.
-        // registers.
-            // create.
-            // get.
-            // set.
-    // static.
-        // classes.
         static class WriteEnableForThreadsAt_STACK* _CLASS_get_ptr_WriteEnable;
-            // create.
-        static void stat_CLASS_create_WriteEnable();
-            // get.
+        static void stat_CLASS_app1_DEFINE_WriteEnableForThreadsAt_STACK();
+        static void stat_CLASS_app3_INITIALISE_WriteEnableForThreadsAt_STACK();
         static class WriteEnableForThreadsAt_STACK* stat_CLASS_get_ptr_WriteEnable();
-            // set.
-        // registers.
-            // create.
-            // get.
-            // set.
     };
 }

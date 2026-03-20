@@ -1,13 +1,16 @@
 #include <iostream>
 #include <array>
-#include <cstdint>
 #include <cstddef>
+#include <cstdint>
+#include <cstring>
+#include <iomanip>
 #include <list>
+#include <string>
 #include <thread>
 #include <vector>
 
 #include "include\Assignment_1_-_the_dll\LIB_Math.h"
-#include "include\Assignment_1_-_the_dll\Framework.h"
+#include "include\Assignment_1_-_the_dll\Framework_App.h"
 #include "include\Assignment_1_-_the_dll\Global.h"
 #include "include\Assignment_1_-_the_dll\Adder.h"
 
@@ -65,16 +68,15 @@ int main()
 {
     std::cout << "entered TestBench." << std::endl;
 // LIB Adder.
-    /*
-            void* pgmID_CLIBMAth = CLIBMyMath::CLIBAdder::generate_Program();
-            std::cout << "booted CLIBAdder." << std::endl;
-            CLIBMyMath::CLIBAdder::set_Input_Subset_praise0_valueA(pgmID_CLIBMAth, (unsigned char*)uint8_t(1.2));
-            CLIBMyMath::CLIBAdder::set_Input_Subset_praise0_valueB(pgmID_CLIBMAth, (unsigned char*)uint8_t(1.2));
-            std::cout << "set inputs. A=" << uint8_t(1.2) << " B=" << uint8_t(1.2) << std::endl;
-            CLIBMyMath::CLIBAdder::do_Add(pgmID_CLIBMAth);
-            std::cout << "done add." << std::endl;
-            std::cout << "ans = " << CLIBMyMath::Global::stat_ByteArray_to_Double(CLIBMyMath::CLIBAdder::get_Output_Subset_praise0_value(pgmID_CLIBMAth)) << std::endl;
-    */
+    void* pgmID_CLIBMAth = CLIBMyMath::CLIBAdder::app_FUNCT_generate_Program();
+    //std::cout << "booted CLIBAdder." << std::endl;
+    //CLIBMyMath::CLIBAdder::set_Input_Subset_praise0_valueA(pgmID_CLIBMAth, (unsigned char*)uint8_t(1.2));
+    //CLIBMyMath::CLIBAdder::set_Input_Subset_praise0_valueB(pgmID_CLIBMAth, (unsigned char*)uint8_t(1.2));
+    //std::cout << "set inputs. A=" << uint8_t(1.2) << " B=" << uint8_t(1.2) << std::endl;
+    //CLIBMyMath::CLIBAdder::do_Add(pgmID_CLIBMAth);
+   // std::cout << "done add." << std::endl;
+   // std::cout << "ans = " << CLIBMyMath::Global::stat_ByteArray_to_Double(CLIBMyMath::CLIBAdder::get_Output_Subset_praise0_value(pgmID_CLIBMAth)) << std::endl;
+
 
 // LIB Templates.
     /*
@@ -95,6 +97,6 @@ int main()
     //void* pgmID_2 = OpenAvrilCLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::CLIBWriteEnableForThreadsAtSERVEROUTPUTRECIEVE::generate_Program();
     //std::cout << "booted pgmID_2 => CLIDWriteEnableForThreadsAtSERVEROUTPUTRECIEVE.\n" << std::endl;;
 
-    void* pgmID = OpenAvrilConcurrency::CLIBConcurrentServerIO::app_FUNCT_generate_Program();
+    //void* pgmID = OpenAvrilConcurrency::CLIBConcurrentServerIO::app_FUNCT_generate_Program();
 
 }

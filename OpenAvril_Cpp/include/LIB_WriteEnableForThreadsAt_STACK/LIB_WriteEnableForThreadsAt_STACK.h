@@ -5,41 +5,19 @@
 #endif
 extern "C"
 {
-	namespace OpenAvrilCLIDWriteEnableForThreadsAtSTACK
+	namespace OpenAvrilCLIBWriteEnableForThreadsAtSTACK
 	{
-		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIDWriteEnableForThreadsAtSTACK
+		class LIBWRITEENABLEFORTHREADSATSTACK_API CLIBWriteEnableForThreadsAtSTACK
 		{
 		public:
-// public.
-	// constructor.
-			CLIDWriteEnableForThreadsAtSTACK();
-
-	// destructor.
-
-	// dynamic.
-			static void* generate_Program();
-			static void terminate_Program();
-			static void write_End(void*, uint8_t coreId);
-			static void write_Start(void*, uint8_t coreId);
-		// get.
-		// set.
-	// static.
-		// get.
-		// set.
-
+			static void* app_FUNCT_generate_Program();
+			static void app_FUNCT_terminate_Program();
+			static void app_FUNCT_write_End(void*, unsigned char* bytes);
+			static void app_FUNCT_write_Start(void*, unsigned char* bytes);
 		private:
-// private.
-	// dynamic.
-		// get.
-		// set.
-	// static.
-			static void stat_create_Framework();
-		// get.
-			static class WriteEnableForThreadsAt_STACK_Framework* stat_get_ptr_Framework();
-		// set.
-	// pointers.
-		// classes.
-		// registers.
+			static void stat_app1_CLASS_DEFINE_Framework();
+			static void stat_app3_CLASS_INITIALISE_Framework();
+			static class WriteEnableForThreadsAt_STACK_Framework* stat_CLASS_get_ptr_Framework();
 		};
 	}
 }
