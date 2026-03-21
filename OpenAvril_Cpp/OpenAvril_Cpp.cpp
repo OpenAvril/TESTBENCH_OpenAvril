@@ -79,11 +79,11 @@ int main()
 
 // LIB Templates.
     
-    void* pgmID_ReadWrite = OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_generate_Program();
-    std::cout << "booted pgmID_ReadWrite => CLIDWriteEnableForThreadsAtSTACK.\n";
+    //void* pgmID_ReadWrite = OpenAvrilCLIBWriteEnableForThreadsAtSTACK::CLIBWriteEnableForThreadsAtSTACK::app_FUNCT_generate_Program();
+    //std::cout << "booted pgmID_ReadWrite => CLIDWriteEnableForThreadsAtSTACK.\n";
 
-    //void* pgmID_LaunchThraed = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::generate_Program();
-    //std::cout << "booted pgmID_LaunchThraed => CLIBLaunchEnableForConcurrentThreadsAtEND.\n";
+    void* pgmID_LaunchThraed = OpenAvrilCLIBLaunchEnableForConcurrentThreadsAtEND::CLIBLaunchEnableForConcurrentThreadsAtEND::generate_Program();
+    std::cout << "booted pgmID_LaunchThraed => CLIBLaunchEnableForConcurrentThreadsAtEND.\n";
     
 
 // LIB_Server
